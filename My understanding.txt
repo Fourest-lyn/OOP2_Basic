@@ -1,0 +1,16 @@
+
+
+
+
+
+
+TokenScanner:
+输入一行字符，将其分割成很多词与符号与数字。
+
+
+evalstate:
+储存用户已经定义的变量以及类型。
+var代表变量名, value代表变量值。
+setValue(变量名, 变量值)
+getValue(变量名)
+isDefined(变量名)

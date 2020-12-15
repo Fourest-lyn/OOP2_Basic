@@ -1,11 +1,10 @@
 /*
  * File: Basic.cpp
  * ---------------
- * Name: [TODO: enter name here]
- * Section: [TODO: enter section leader here]
+ * Name: Fourest
+ * Section: Null
  * This file is the starter project for the BASIC interpreter from
  * Assignment #6.
- * [TODO: extend and correct the documentation]
  */
 
 #include <cctype>

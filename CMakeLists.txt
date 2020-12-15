@@ -12,7 +12,7 @@ add_executable(OOP2_Basic
         Basic/parser.h
         Basic/parser.cpp
         Basic/program.h
-        Basic/parser.cpp
+        Basic/program.cpp
         Basic/evalstate.h
         Basic/evalstate.cpp
         Basic/statement.h
@@ -24,5 +24,7 @@ add_executable(OOP2_Basic
         StanfordCPPLib/simpio.cpp
         StanfordCPPLib/tokenscanner.h
         StanfordCPPLib/tokenscanner.cpp
+        StanfordCPPLib/strlib.h
+        StanfordCPPLib/strlib.cpp
         StanfordCPPLib/map.h
         )

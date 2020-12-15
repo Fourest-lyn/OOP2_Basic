@@ -11,10 +11,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c15af4b8-7815-40c9-bb54-9b53ae1e1fe6" name="Default Changelist" comment="">
+    <list default="true" id="c15af4b8-7815-40c9-bb54-9b53ae1e1fe6" name="Default Changelist" comment="2020.12.9 20:08&#10;Complete the CMakeLists.txt.">
+      <change afterPath="$PROJECT_DIR$/My understanding.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/Basic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/Basic.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/program.h" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/program.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/statement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/statement.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,21 +42,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="OOP2_Basic" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP2_Basic" TARGET_NAME="OOP2_Basic" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP2_Basic" RUN_TARGET_NAME="OOP2_Basic">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -67,11 +66,47 @@
       <updated>1607268800652</updated>
       <workItem from="1607268802067" duration="361000" />
       <workItem from="1607302894452" duration="30000" />
-      <workItem from="1607504637334" duration="984000" />
+      <workItem from="1607504637334" duration="1308000" />
+      <workItem from="1607564714610" duration="650000" />
+      <workItem from="1607565746863" duration="809000" />
+      <workItem from="1607567911205" duration="1042000" />
+      <workItem from="1607579930525" duration="718000" />
+      <workItem from="1607580994166" duration="107000" />
+      <workItem from="1607581131750" duration="136000" />
+      <workItem from="1607581309930" duration="416000" />
+      <workItem from="1607747902725" duration="4240000" />
+      <workItem from="1607785798589" duration="131000" />
+      <workItem from="1607950263524" duration="637000" />
+      <workItem from="1607953838692" duration="2000" />
+      <workItem from="1607994543001" duration="9749000" />
     </task>
+    <task id="LOCAL-00001" summary="2020.12.9 20:08&#10;Complete the CMakeLists.txt.">
+      <created>1607515722692</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607515722692</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2020.12.9 20:08&#10;Complete the CMakeLists.txt." />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.12.9 20:08&#10;Complete the CMakeLists.txt." />
   </component>
 </project>
