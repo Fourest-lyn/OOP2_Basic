@@ -11,13 +11,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c15af4b8-7815-40c9-bb54-9b53ae1e1fe6" name="Default Changelist" comment="2020.12.9 20:08&#10;Complete the CMakeLists.txt.">
-      <change afterPath="$PROJECT_DIR$/My understanding.txt" afterDir="false" />
+    <list default="true" id="c15af4b8-7815-40c9-bb54-9b53ae1e1fe6" name="Default Changelist" comment="2020.12.15 15:33&#10;None.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basic/Basic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/Basic.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/evalstate.h" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/evalstate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/program.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/program.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basic/program.h" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/program.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/statement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/statement.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basic/statement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/statement.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My understanding.txt" beforeDir="false" afterPath="$PROJECT_DIR$/My understanding.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Images" />
   </component>
   <component name="RunManager">
     <configuration name="OOP2_Basic" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP2_Basic" TARGET_NAME="OOP2_Basic" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP2_Basic" RUN_TARGET_NAME="OOP2_Basic">
@@ -79,6 +82,29 @@
       <workItem from="1607950263524" duration="637000" />
       <workItem from="1607953838692" duration="2000" />
       <workItem from="1607994543001" duration="9749000" />
+      <workItem from="1608017534047" duration="184000" />
+      <workItem from="1608030139224" duration="209000" />
+      <workItem from="1608030359414" duration="9000" />
+      <workItem from="1608082943061" duration="600000" />
+      <workItem from="1608134402415" duration="7000" />
+      <workItem from="1608453130142" duration="7530000" />
+      <workItem from="1608479702571" duration="1199000" />
+      <workItem from="1608527772770" duration="2000" />
+      <workItem from="1608609713611" duration="2897000" />
+      <workItem from="1608710956165" duration="1198000" />
+      <workItem from="1608742171396" duration="34000" />
+      <workItem from="1608908739434" duration="4000" />
+      <workItem from="1609395521750" duration="51000" />
+      <workItem from="1609395678650" duration="608000" />
+      <workItem from="1609506962884" duration="217000" />
+      <workItem from="1609510803510" duration="9074000" />
+      <workItem from="1609563107200" duration="8954000" />
+      <workItem from="1609648158273" duration="4077000" />
+      <workItem from="1609768836695" duration="5000" />
+      <workItem from="1609826129922" duration="36000" />
+      <workItem from="1609831816183" duration="4143000" />
+      <workItem from="1609836106896" duration="754000" />
+      <workItem from="1609836978943" duration="6048000" />
     </task>
     <task id="LOCAL-00001" summary="2020.12.9 20:08&#10;Complete the CMakeLists.txt.">
       <created>1607515722692</created>
@@ -87,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607515722692</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2020.12.15 15:33&#10;None.">
+      <created>1608017623993</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608017623993</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +140,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2020.12.9 20:08&#10;Complete the CMakeLists.txt." />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.12.9 20:08&#10;Complete the CMakeLists.txt." />
+    <MESSAGE value="2020.12.15 15:33&#10;None." />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.12.15 15:33&#10;None." />
   </component>
 </project>

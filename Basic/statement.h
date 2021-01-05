@@ -12,6 +12,8 @@
 #ifndef _statement_h
 #define _statement_h
 
+#include <utility>
+
 #include "evalstate.h"
 #include "exp.h"
 
@@ -63,6 +65,97 @@ public:
    virtual void execute(EvalState & state) = 0;
 
 };
+
+//This class use for throw and judge the goto what line.
+class Goto
+{
+    int line_number;
+public:
+    explicit Goto(int x):line_number(x){}
+    int getNum() const{return line_number;}
+};
+
+//This class use for throw and means the end of the program.
+class End{};
+
+class Error{};
+
+//Done
+class rem_ : public Statement
+{
+    std::string comment;
+
+public:
+    explicit rem_(std::string str):comment(std::move(str)){}
+    void execute(EvalState & state) override {}
+};
+
+//Done
+class let_ : public Statement
+{
+    Expression *exp;
+
+public:
+    explicit let_(Expression *);
+    void execute(EvalState & state) override;
+    ~let_() override { delete exp; }
+
+};
+
+//Todo
+class pri_ : public Statement
+{
+    Expression *exp;
+
+public:
+    explicit pri_(Expression *);
+    void execute(EvalState & state) override;
+    ~pri_() override { delete exp; }
+
+};
+
+//Todo
+class inp_ : public Statement
+{
+    std::string name;
+
+public:
+    explicit inp_(std::string str):name(std::move(str)){}
+    void execute(EvalState & state) override;
+
+};
+
+//Done
+class end_ : public Statement
+{
+public:
+    void execute(EvalState & state) override{throw End();}
+};
+
+//Done
+class got_ : public Statement
+{
+    int n;
+
+public:
+    explicit got_(int n_):n(n_){}
+    void execute(EvalState & state) override;
+};
+
+//Todo
+class ife_ : public Statement
+{
+    Expression *lhs,*rhs;
+    std::string cmp;
+    int n;
+
+public:
+    ife_(Expression *l,const std::string &c,Expression *r,int position);
+    void execute(EvalState & state) override;
+    ~ife_();
+};
+
+
 
 /*
  * The remainder of this file must consists of subclass

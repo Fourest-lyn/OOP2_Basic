@@ -1,16 +1,63 @@
 
 
-
-
-
-
 TokenScanner:
 输入一行字符，将其分割成很多词与符号与数字。
 
 
+
 evalstate:
-储存用户已经定义的变量以及类型。
+储存用户已经定义的变量以及名字。
 var代表变量名, value代表变量值。
-setValue(变量名, 变量值)
-getValue(变量名)
-isDefined(变量名)
+
+void setValue(变量名, 变量值)
+int getValue(变量名)
+bool isDefined(变量名)
+
+
+program:
+总程序，操作记录下来的源代码。
+
+void clear() 消除所有储存的源代码
+void addSourceLine(行号,源码) 增加一行源代码，若该行号之前存在，则删除之前存在的，替换为新的，包括对该行解释的内容
+void removeSourceLine(行号) 删除特定某个行号的源代码
+string getSourceLine(行号) 返回某个特定行号的源代码的字符串，若不存在这一行则返回空串
+void setParsedStatement(行号,Statement指针) 将某个特定行号的源代码解释后存入对应的Statement中，如果原先存在则覆盖
+Statement getParsedStatement(行号) 返回某个特定好行的解释Statement的指针，如果没有返回NULL
+void getFirstLineNumber() 返回编号最小的源代码的编号，不存在源代码则返回-1
+void getNextLineNumber(行号) 返回指定行号的下一行的行号。若不存在下一行则返回-1
+
+
+Statement:
+储存一条语句的类，由 evalstate & expression 构成。
+
+void execute(EvalState) 执行一条语句
+
+
+
+exp:
+储存一条表达式。
+
+ConstantExp代表一个常数，IdentifierExp代表一个变量名，CompoundExp代表一个混合算式。
+混合算式的左侧一定是一个常数或是一个变量，而右侧可以是三者任意一个，以此组合出更加完整的混合算式。
+
+int eval(EvalState &state) 返回一条表达式的值
+ExpressionType getType() 返回当前的表达式的类型
+string toString() 显示这一条表达式
+CompoundExp(string op, Expression *lhs, Expression *rhs) CompoundExp的构造函数，
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

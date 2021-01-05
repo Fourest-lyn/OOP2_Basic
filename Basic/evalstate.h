@@ -11,6 +11,7 @@
 
 #include <string>
 #include "../StanfordCPPLib/map.h"
+#include <map>
 
 /*
  * Class: EvalState

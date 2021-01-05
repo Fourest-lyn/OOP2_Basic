@@ -10,6 +10,9 @@
 
 #include <string>
 #include "statement.h"
+
+#include "../StanfordCPPLib/tokenscanner.h"
+#include "parser.h"
 using namespace std;
 
 /*
@@ -138,6 +141,15 @@ public:
 private:
 //todo:
 // Fill this in with whatever types and instance variables you need
+
+struct SourceLine
+{
+    std::string source;
+    Statement *x;
+};
+
+map<int,SourceLine> statements;
+EvalState *state;
 
 };
 
