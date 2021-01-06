@@ -11,14 +11,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c15af4b8-7815-40c9-bb54-9b53ae1e1fe6" name="Default Changelist" comment="2020.01.05 21:28&#10;Temporary saving.">
+    <list default="true" id="c15af4b8-7815-40c9-bb54-9b53ae1e1fe6" name="Default Changelist" comment="2020.01.06 16:01&#10;Temporary saving.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/Basic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/Basic.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/exp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/exp.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/evalstate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/evalstate.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basic/program.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/program.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/program.h" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/program.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basic/statement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/statement.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/statement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/statement.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,11 +47,6 @@
     <configuration name="OOP2_Basic" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP2_Basic" TARGET_NAME="OOP2_Basic" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP2_Basic" RUN_TARGET_NAME="OOP2_Basic">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -104,7 +96,10 @@
       <workItem from="1609831816183" duration="4143000" />
       <workItem from="1609836106896" duration="754000" />
       <workItem from="1609836978943" duration="9946000" />
-      <workItem from="1609900687755" duration="11910000" />
+      <workItem from="1609900687755" duration="12396000" />
+      <workItem from="1609922214084" duration="129000" />
+      <workItem from="1609922950856" duration="16000" />
+      <workItem from="1609925995226" duration="1905000" />
     </task>
     <task id="LOCAL-00001" summary="2020.12.9 20:08&#10;Complete the CMakeLists.txt.">
       <created>1607515722692</created>
@@ -127,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609853302281</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2020.01.06 16:01&#10;Temporary saving.">
+      <created>1609920111558</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609920111558</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +151,7 @@
     <MESSAGE value="2020.12.9 20:08&#10;Complete the CMakeLists.txt." />
     <MESSAGE value="2020.12.15 15:33&#10;None." />
     <MESSAGE value="2020.01.05 21:28&#10;Temporary saving." />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.01.05 21:28&#10;Temporary saving." />
+    <MESSAGE value="2020.01.06 16:01&#10;Temporary saving." />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.01.06 16:01&#10;Temporary saving." />
   </component>
 </project>

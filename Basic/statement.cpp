@@ -44,17 +44,32 @@ pri_::pri_(Expression *input)
 
 void inp_::execute(EvalState &state)
 {
-    cout<<" ? ";
-    string temp;
-    getline(cin,temp);
-    int value=0;
-    for(int i=0;i<temp.length();++i)
+    bool flag=true;
+    int value=0,opt=1;
+    while(flag)
     {
-        if(temp[i]>'9' || temp[i]<'0') error("INVALID NUMBER");
-        value=value*10+int(temp[i]-'0');
-    }
+        flag=false;
+        value=0;
+        opt=1;
 
-    state.setValue(name,value);
+        cout<<" ? ";
+        string temp;
+        getline(cin,temp);
+
+        int i=0;
+        if(temp[i]=='-'){++i; opt=-1;}
+        for(;i<temp.length();++i)
+        {
+            if(temp[i]>'9' || temp[i]<'0')
+            {
+                cout<<"INVALID NUMBER\n";
+                flag=true;
+                break;
+            }
+            value=value*10+int(temp[i]-'0');
+        }
+    }
+    state.setValue(name,value*opt);
 }
 
 void got_::execute(EvalState &state)

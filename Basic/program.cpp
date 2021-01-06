@@ -54,6 +54,7 @@ void Program::addSourceLine(int lineNumber,string line)
     {
         auto it=statements.find(lineNumber);
         delete it->second.x;
+        statements.erase(it);
     }
 
     SourceLine temp;
