@@ -68,8 +68,9 @@ IdentifierExp::IdentifierExp(string name) {
 }
 
 int IdentifierExp::eval(EvalState & state) {
-   if (!state.isDefined(name)) error(name + " is undefined");
-   return state.getValue(name);
+//    if (!state.isDefined(name)) error(name + " is undefined");
+    if (!state.isDefined(name)) error("VARIABLE NOT DEFINED");
+    return state.getValue(name);
 }
 
 string IdentifierExp::toString() {
@@ -125,7 +126,11 @@ int CompoundExp::eval(EvalState & state) {
    if (op == "+") return left + right;
    if (op == "-") return left - right;
    if (op == "*") return left * right;
-   if (op == "/") return left / right;
+   if (op == "/")
+   {
+       if(right==0) error("DIVIDE BY ZERO");
+       return left / right;
+   }
    error("Illegal operator in expression");
    return 0;
 }

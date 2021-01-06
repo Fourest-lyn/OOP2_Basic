@@ -10,8 +10,6 @@
 
 #include <string>
 #include "statement.h"
-
-#include "../StanfordCPPLib/tokenscanner.h"
 #include "parser.h"
 using namespace std;
 
@@ -139,8 +137,6 @@ public:
    int getNextLineNumber(int lineNumber);
 
 private:
-//todo:
-// Fill this in with whatever types and instance variables you need
 
 struct SourceLine
 {
@@ -148,8 +144,15 @@ struct SourceLine
     Statement *x;
 };
 
-map<int,SourceLine> statements;
-EvalState *state;
+    map<int,SourceLine> statements;
+
+public:
+
+    EvalState *state;
+
+    void RunAllRecords();
+
+    void DisplayAllRecords();
 
 };
 

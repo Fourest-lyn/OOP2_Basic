@@ -9,6 +9,7 @@
 
 #include <string>
 #include "statement.h"
+#include <iostream>
 using namespace std;
 
 /* Implementation of the Statement class */
@@ -41,13 +42,18 @@ pri_::pri_(Expression *input)
     exp=input;
 }
 
-
 void inp_::execute(EvalState &state)
 {
     cout<<" ? ";
-    int value;
-    cin>>value;
-    //todo: Add the Robustness check.
+    string temp;
+    getline(cin,temp);
+    int value=0;
+    for(int i=0;i<temp.length();++i)
+    {
+        if(temp[i]>'9' || temp[i]<'0') error("INVALID NUMBER");
+        value=value*10+int(temp[i]-'0');
+    }
+
     state.setValue(name,value);
 }
 
@@ -83,7 +89,6 @@ ife_::~ife_()
 
 
 
-//todo: Remember to process the Goto & End class in program.h
 
 
 

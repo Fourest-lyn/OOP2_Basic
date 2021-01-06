@@ -11,16 +11,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c15af4b8-7815-40c9-bb54-9b53ae1e1fe6" name="Default Changelist" comment="2020.12.15 15:33&#10;None.">
+    <list default="true" id="c15af4b8-7815-40c9-bb54-9b53ae1e1fe6" name="Default Changelist" comment="2020.01.05 21:28&#10;Temporary saving.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basic/Basic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/Basic.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/evalstate.h" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/evalstate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/exp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/exp.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basic/program.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/program.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basic/program.h" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/program.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basic/statement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/statement.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basic/statement.h" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/statement.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/My understanding.txt" beforeDir="false" afterPath="$PROJECT_DIR$/My understanding.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Images" />
   </component>
   <component name="RunManager">
@@ -104,7 +103,8 @@
       <workItem from="1609826129922" duration="36000" />
       <workItem from="1609831816183" duration="4143000" />
       <workItem from="1609836106896" duration="754000" />
-      <workItem from="1609836978943" duration="6048000" />
+      <workItem from="1609836978943" duration="9946000" />
+      <workItem from="1609900687755" duration="11910000" />
     </task>
     <task id="LOCAL-00001" summary="2020.12.9 20:08&#10;Complete the CMakeLists.txt.">
       <created>1607515722692</created>
@@ -120,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608017623993</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2020.01.05 21:28&#10;Temporary saving.">
+      <created>1609853302281</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609853302281</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +148,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2020.12.9 20:08&#10;Complete the CMakeLists.txt." />
     <MESSAGE value="2020.12.15 15:33&#10;None." />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.12.15 15:33&#10;None." />
+    <MESSAGE value="2020.01.05 21:28&#10;Temporary saving." />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.01.05 21:28&#10;Temporary saving." />
   </component>
 </project>

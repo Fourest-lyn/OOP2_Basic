@@ -83,10 +83,7 @@ class Error{};
 //Done
 class rem_ : public Statement
 {
-    std::string comment;
-
 public:
-    explicit rem_(std::string str):comment(std::move(str)){}
     void execute(EvalState & state) override {}
 };
 
@@ -102,7 +99,7 @@ public:
 
 };
 
-//Todo
+//Done
 class pri_ : public Statement
 {
     Expression *exp;
@@ -114,7 +111,7 @@ public:
 
 };
 
-//Todo
+//Done
 class inp_ : public Statement
 {
     std::string name;
@@ -142,7 +139,7 @@ public:
     void execute(EvalState & state) override;
 };
 
-//Todo
+//Done
 class ife_ : public Statement
 {
     Expression *lhs,*rhs;
@@ -154,7 +151,6 @@ public:
     void execute(EvalState & state) override;
     ~ife_();
 };
-
 
 
 /*

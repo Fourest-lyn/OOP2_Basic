@@ -10,7 +10,7 @@
 
 #include <string>
 #include "program.h"
-#include "statement.h"
+//#include "statement.h"
 
 using namespace std;
 
@@ -21,7 +21,6 @@ Program::Program()
 
 Program::~Program()
 {
-    delete state;
     auto it=statements.begin();
     while(it!=statements.end())
     {
@@ -29,12 +28,11 @@ Program::~Program()
         ++it;
     }
     statements.clear();
+    delete state;
 }
 
 void Program::clear()
 {
-    delete state;
-    state=new EvalState;
     auto it=statements.begin();
     while(it!=statements.end())
     {
@@ -42,6 +40,8 @@ void Program::clear()
         ++it;
     }
     statements.clear();
+    delete state;
+    state=new EvalState;
 }
 
 void Program::addSourceLine(int lineNumber,string line)
@@ -60,33 +60,60 @@ void Program::addSourceLine(int lineNumber,string line)
     temp.source=line;
 
     TokenScanner scanner(line);
+    scanner.ignoreWhitespace();
+    scanner.nextToken();
     string temp_str=scanner.nextToken();
-    if(temp_str=="LET")
+
+    if(temp_str=="REM")
     {
-        temp.x=new let_(readE(scanner));
-        if(scanner.hasMoreTokens()) throw Error();
+        temp.x=new rem_;
+        statements.insert({lineNumber,temp});
+        return;
     }
-    if(temp_str=="PRINT")
-    {
-        temp.x=new pri_(readE(scanner));
-        if(scanner.hasMoreTokens()) throw Error();
-    }
-    if(temp_str=="INPUT")
-    {
-        temp.x=new inp_(readT(scanner)->toString());
-        if(scanner.hasMoreTokens()) throw Error();
-    }
-    if(temp_str=="END")
-    {
-        temp.x=new end_;
-        if(scanner.hasMoreTokens()) throw Error();
-    }
+    if(temp_str=="LET") temp.x=new let_(readE(scanner));
+    if(temp_str=="PRINT") temp.x=new pri_(readE(scanner));
+    if(temp_str=="INPUT") temp.x=new inp_(readT(scanner)->toString());
+    if(temp_str=="END") temp.x=new end_;
     if(temp_str=="GOTO")
     {
-        temp.x=new got_(readT(scanner)->eval());
+        temp.x=new got_(readT(scanner)->eval(*state));
     }
-//    if(temp_str=="REM") temp.x=new rem_()
-    //todo: To input the SourceLine's x;
+    if(temp_str=="IF")
+    {
+        string left,right;
+        int mid=0;
+        string cmp;
+        for(int i=0;i<line.length();++i)
+        {
+            if(line[i]=='>' || line[i]=='<' || line[i]=='=')
+            {
+                mid=i;
+                cmp=line[i];
+                left=line;
+                left.erase(i);
+                right=line.substr(i+1);
+                break;
+            }
+        }
+        scanner.setInput(left);
+        scanner.nextToken();
+        scanner.nextToken();
+        Expression *l=readE(scanner);
+
+        scanner.setInput(right);
+        Expression *r=readE(scanner);
+//        cout<<"##"<<left<<"##"<<right<<"##"<<r->eval(*state)<<endl;
+//        cout<<"##"<<scanner.nextToken()<<"##"<<cmp<<"##"<<endl;
+        if(scanner.nextToken()!="THEN") throw Error();
+
+        int position=readT(scanner)->eval(*state);
+        temp.x=new ife_(l,cmp,r,position);
+    }
+    //Check if there are nothing left.
+
+//    if(scanner.hasMoreTokens()) cout<<"##"<<temp_str<<"##"<<line<<"##"<<endl;
+    if(scanner.hasMoreTokens()) throw Error();
+
     statements.insert({lineNumber,temp});
 }
 
@@ -106,7 +133,6 @@ string Program::getSourceLine(int lineNumber)
     auto it=statements.find(lineNumber);
     if(it==statements.end()) return "";
 
-    //todo: To output a SourceLine.
     return it->second.source;
 }
 
@@ -149,3 +175,55 @@ int Program::getNextLineNumber(int lineNumber)
     if(it==statements.end()) return-1;
     return it->first;
 }
+
+void Program::RunAllRecords()
+{
+    if(statements.empty()) return;
+    auto it=statements.begin();
+    while(it!=statements.end())
+    {
+        try
+        {
+            it->second.x->execute(*state);
+            ++it;
+        }
+        catch (End) { return; }
+        catch (Goto temp)
+        {
+            int x=temp.getNum();
+            it=statements.find(x);
+            if(it==statements.end()) error("LINE NUMBER ERROR");
+        }
+    }
+
+}
+
+void Program::DisplayAllRecords()
+{
+    if(statements.empty()) return;
+    auto it=statements.begin();
+    while(it!=statements.end())
+    {
+        cout<<it->second.source<<endl;
+        ++it;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
